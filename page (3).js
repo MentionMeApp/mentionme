@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0a0510;color:#f0ecf8;font-family:'Sora','Outfit',sans-serif;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:rgba(255,60,142,.12);border-radius:3px}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;transition:all .2s}
+button:hover:not(:disabled){filter:brightness(1.1);transform:translateY(-1px)}
+@keyframes mm-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.3)}}
+@keyframes mm-spin{to{transform:rotate(360deg)}}
+@keyframes mm-slide{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mm-glow{0%,100%{box-shadow:0 0 24px rgba(255,60,142,.15)}50%{box-shadow:0 0 48px rgba(255,60,142,.35)}}
+@keyframes mm-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes lp-glow{0%,100%{box-shadow:0 0 30px rgba(255,60,142,.25)}50%{box-shadow:0 0 60px rgba(255,60,142,.4)}}
+@keyframes lp-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes lp-grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+@keyframes lp-pulse{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes lp-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes lp-aurora{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}

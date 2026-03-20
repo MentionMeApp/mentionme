@@ -337,8 +337,8 @@ export default function Landing() {
               <span style={{fontSize:14,fontWeight:700,color:C.muted}}>MentionMe</span>
             </div>
             <div style={{display:"flex",gap:24}}>
-              {["Privacy","Terms","Contact","Blog"].map(s=>(
-                <span key={s} style={{fontSize:12.5,color:C.dim,cursor:"pointer"}} onMouseEnter={e=>e.target.style.color=C.muted} onMouseLeave={e=>e.target.style.color=C.dim}>{s}</span>
+              {[{l:"Privacy",h:"/privacy"},{l:"Terms",h:"/terms"},{l:"Contact",h:"/contact"},{l:"Blog",h:"/blog"}].map(s=>(
+                <a key={s.l} href={s.h} style={{fontSize:12.5,color:C.dim,textDecoration:"none",transition:"color .2s"}} onMouseEnter={e=>e.target.style.color=C.muted} onMouseLeave={e=>e.target.style.color=C.dim}>{s.l}</a>
               ))}
             </div>
             <div style={{fontSize:12,color:"#3a3454"}}>© 2026 MentionMe. All rights reserved.</div>
